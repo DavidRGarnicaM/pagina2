@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"  />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+
+    <title>FINAL</title>
+</head>
+<body>
+    
+    <nav class="navbar" id="ratitas" >
+   
+        <div class="inner-width">
+   
+            <a href="../index.html" class="logo"></a>
+   
+            <div class="slogan">DG STUDIOS</div>
+   
+            <button class="menu-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+   
+            <div class="navbar-menu">
+
+                <div class="titularios">
+                    <a href="../index.html"          onmouseout="pausar()" >Inicio  </a>
+                    <div class="subtitulos">
+                        <div ><a href="../index.html#portada">Portada</a></div>
+                        <div ><a href="../index.html#mapa">Ubicacion</a></div>
+                    </div>
+                </div>
+
+                <div class="titularios">
+                    <a href="../componentes/c1.html"  onmouseout="pausar()">Festivales</a>
+                    <div class="subtitulos">
+                        <div><a href="#evolucion">Evolucion</a></div>
+                        <div><a href="#lista">Mas Populares</a></div>
+                    </div>
+                </div>
+
+                <div class="titularios">
+                    <a href="../componentes/c2.html"  onmouseout="pausar()">Tomorrowland   </a>
+                    <div class="subtitulos">
+                        <div><a href="../componentes/c2.html#origen">Origen Fest</a></div>
+                        <div><a href="../componentes/c2.html#evolucion">Evolucion</a></div>
+                        <div><a href="../componentes/c2.html#sedes">Sedes</a></div>
+                        <div><a href="../componentes/c2.html#galeria">Galeria</a></div>
+                    </div>
+                </div>
+
+                <div class="titularios">
+                    <a href="../componentes/c3.html"  onmouseout="pausar()">EDC</a>
+                    <div class="subtitulos">
+                        <div><a href="../componentes/c3.html#origen">Origen Fest</a></div>
+                        <div><a href="../componentes/c3.html#evolucion">Evolucion</a></div>
+                        <div><a href="../componentes/c3.html#sedes">Sedes</a></div>
+                        <div><a href="../componentes/c3.html#galeria">Galeria</a></div>
+                    </div>
+                </div>
+
+                <div class="titularios">
+                    <a href="../componentes/c4.html"  onmouseout="pausar()" >HoH</a>
+                    <div class="subtitulos">
+                        <div><a href="../componentes/c4.html#galeria">Galeria</a></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="c-slider" >
+        <div id="slider">
+
+        <section>
+            <img src="../img/i4.jpg"  onmouseover="pausar()" onmouseout="continuar()">
+        </section>
+        <section>
+            <img src="../img/i1.jpg"  onmouseover="pausar()" onmouseout="continuar()">
+        </section>
+        <section>
+            <img src="../img/i2.jpg"  onmouseover="pausar()" onmouseout="continuar()">
+        </section>
+        <section>
+            <img src="../img/i3.jpg"  onmouseover="pausar()" onmouseout="continuar()">
+        </section>
+        </div> 
+
+        <div id="btn-prev" onclick="moverI()" onmouseover="pausar()" onmouseout="continuar()">&#60;</div>
+        <div id="btn-next" onclick="moverD()" onmouseover="pausar()" onmouseout="continuar()">&#62;</div>
+
+        
+    </div>
+
+    
+    
+    <div class=" cajitabtn btnAnimado"  >
+        <a href=""  class="fas fa-chevron-up"></a>
+    </div>
+
+    <p id="evolucion" style="height:80px;"></p>
+    <div class="contenidoX" >
+    <h2>Evolucion:</h2>
+    <p>De Brasil a Malasia, de Tailandia a Canadá, los festivales de música electrónica surgen en todo el mundo a medida que las disqueras y promotoras impulsan una revolución dance con un nuevo ritmo.</p>
+    <p>Las partes importantes en la música electrónica, una industria que tiene un valor estimado de 4.500 millones de dólares, envía a marcas de festivales a mercados emergentes en Asia y Sudamérica en un esfuerzo por aumentar el seguimiento del género musical.</p>
+    <p>El productor francés de música (quien tiene 45 millones de fanáticos en Facebook) añadió: “Creo que va a crecer mucho más porque si miro la historia del hip hop… tenemos dos géneros musicales que puedes comparar porque vinieron de lo clandestino y luego se volvieron populares”.</p>
+    <p>En julio, 180,000 fanáticos de la música se reunieron en la pequeña ciudad belga de Boom para Tomorrowland, uno de los mayores festivales de música del mundo, mientras aficionados a los conciertos de 214 países volaron para un día de música electrónica dance.</p>   
+    </div>
+   <div class="contenidoX" id="lista">
+    <h2>Festivales mas populares:</h2>
+    <ul>
+        <br>
+        <li>Tomorrowland </li>
+        <li>Ultra Music Festival </li>
+        <li>EDC</li>
+        <li>Mysteryland </li>
+        <li>Ultra</li>
+        <li>Lollapallooza</li>
+        <li>Defqon 1</li>
+        <li>Daydream Festival</li>
+        <li>Creamfields</li>
+        
+    </ul>
+   </div>
+
+
+
+
+
+    <footer >
+        <div>
+        <h3>PAGINA DE DISEÑO </h3>
+        <h4>HECHO POR DAVID GARNICA</h4>
+        <p>
+            todos los derechos reservados   
+       </p>
+    </div>
+    </footer>
+   
+
+ 
+
+  
+
+    <script src="../js/sliderjs.js"></script>
+    <script src="../js/menutoogler.js"></script>
+
+   <script src="../js/scrolljs.js"></script>
+ 
+
+
+</body>
+</html>
