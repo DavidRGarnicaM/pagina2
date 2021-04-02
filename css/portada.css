@@ -1,0 +1,35 @@
+.portada
+{
+    width: 100%;
+    height: 30vh;
+   
+}
+.portada img
+{
+    width: 100%;
+    height: inherit;
+    max-height: inherit;
+  
+}
+.portada
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 35vh;
+    max-height: 35vh;
+}
+.portada h2
+{
+
+    border-radius: 20px;
+    margin: 0px 5px;
+    padding: 10px 25px;
+    font-size: 40px;
+    font-weight: bolder;   
+    color: white;  
+}

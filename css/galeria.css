@@ -1,0 +1,299 @@
+.navbar
+{
+    background-color: black
+}
+/*
+********************************************************/
+.portada
+{
+    background: url(../img/trabajos4.jpg);
+   
+}
+.portada h2
+{
+
+  
+    background-color: rgba(0,0,255,0.4);
+  
+}
+/****************************
+*/
+.lineaa
+{
+    background: #550b51;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+/*************************/
+html
+{
+    background: black;
+}
+.tipodeservicio
+{
+   
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 45px;   
+
+}
+.tipodeservicio .titulo
+{
+    
+    width: 100%;
+    display: flex;    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.tipodeservicio .titulo h2
+{
+    
+   color: white;
+   background-color: rgba(0,0,255,0.4);
+   width: 100%;
+   border-radius: 7px;
+   font-size: 32px;
+}
+.r1,.r2,.r3
+{
+    width: 100%;
+    background: url(../img/galfon11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:0px;
+}
+.cgirador
+{
+    width: 80%;
+    overflow: hidden;    
+    margin: 15px auto;
+    position: relative;
+}
+.girador1,.girador2,.girador3
+{
+    display: flex;    
+}
+.girador1
+{  
+    width: 297%;
+}
+.girador2
+{
+    width: 231%;
+}
+.girador3
+{
+    width: 165%;
+}
+.item
+{
+    width: 30%;
+    height: 65%;
+    border: solid 5px red;
+    border-radius: 25px;
+    margin: 20px 0.6%;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.foto
+{
+    width: 100%;
+    height: 80%; 
+    margin:0 auto ;   
+    position: relative;
+    overflow: hidden;
+    z-index: 1;   
+}
+.foto .fijo
+{
+    width: 100%;
+    height: 100%;
+}
+.foto .fijo img
+{
+    width: 100%;
+    height: 100%;
+   
+}
+
+/*******************************************************/
+
+#btn-preva,#btn-nexta 
+{
+    width: 40px;
+    height: 40px;
+    background-color:red;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: monospace;
+   
+}
+#btn-preva
+{
+    left:25px;
+}
+#btn-nexta
+{
+    right: -15px;
+}
+#btn-preva:hover,#btn-nexta:hover
+{
+    background-color: black;
+    color: white;
+    border: solid  white 3px;
+}
+
+
+.espaciobotones
+{
+    width: 100%;
+    height: 100px;
+    display: block; 
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+  
+}
+/*
+************************************/
+.ligab
+{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,255,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    transform: scale(0) ;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ligab img
+{
+    width: 70vw;
+    height: 60vh;
+    border-radius: 25px;
+    border: solid black 6px;
+}
+.ligab:target
+{
+    transform: scale(1);
+}
+
+
+.cerrar
+{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.next, .ant
+{
+    display: block;
+    background: red;
+    color: white;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+  
+}
+.ant
+{
+    
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.next
+{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+/*************************************************/
+
+
+/***********************************************************************************************************************************************/
+@media screen and (max-width: 520px) 
+{
+     
+    .espaciobotones
+    {
+        display: block;
+    }
+    #btn-preva , #btn-nexta 
+    {
+        position: absolute;
+        top: 86% ;
+        padding: 0;
+    }
+    #btn-nexta 
+    {
+        right: 28%;
+    }
+    #btn-preva 
+    {
+        left: 40% ;
+    }
+    .infoadicional , .infofoto
+    {
+    font-size: 14px;
+    padding: 0;
+    }
+
+}
+@media screen and (max-width: 420px) 
+{
+
+    .infoadicional , .infofoto
+    {
+        font-size: 12px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    .ligab img
+    {
+      
+        height: 40vh;
+        
+    }
+    .cerrar
+    {
+        top: 20px;
+    right: 20px;
+    }
+
+}
+/*******************************************************/

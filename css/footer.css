@@ -1,0 +1,135 @@
+
+.footer2
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;  
+    padding:0px 2px 2px 2px;
+    background: radial-gradient(circle, blue ,black 45%);
+    color: white;   
+    border: solid blue 4px;  
+}
+.footer2 p 
+{
+    font-weight:normal ;
+    margin: 12px 0px;
+}
+.cajadatos h4
+{
+    font-weight:bolder ;
+    margin: 12px 0px;  
+    font-size: 22px;
+}
+ .cajalogo ,.sm
+{
+    width: 30%;
+}
+
+.cajadatos
+{
+    width: 40%;
+    min-width: 270px;
+}
+.cajalogo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.cajalogo img
+{    
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+}
+.sm
+{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sm button , #smswap
+{
+    border-radius: 50% ;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    line-height: 50px;
+    border: #25D366 solid 1px;
+    background-color: #25D366 ;
+    outline: none;    
+}
+
+.sm button:hover , .sm button:hover i , #smswap:hover , #smswap:hover i
+{
+cursor: pointer;
+background-color: #1c753d;
+border-color:  #1c753d;
+}
+.sm button i , #smswap i 
+{
+    color: white;
+   background-color: #25D366;
+   border-radius: 50%;  
+}
+.sm a 
+{
+    font-weight: bolder;
+    margin: 0px 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+sm a 
+{
+    text-decoration: none;
+}
+/**************************************************************************/
+@media screen and (max-width:720px)
+{
+
+    .footer2 
+    {
+       
+        display: block;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        padding-bottom: 20px;
+        background: linear-gradient(black 28%, blue 50%,black  80% );
+       
+    }
+    .footer2 .cajalogo
+    { 
+        display: block;
+       
+        width:100% ;
+        height:150px ;
+        min-height: 150px;
+        min-width: none;
+        margin: auto;
+    }  
+    .cajalogo img
+    {
+        height: 100%;
+        
+    } 
+    .footer2 .cajadatos
+    {
+        display: block;
+        text-align: left;
+        margin: auto;
+    }   
+    .footer2 .sm
+    {
+       
+        padding-top: 25px;
+        margin: auto;
+    }
+}

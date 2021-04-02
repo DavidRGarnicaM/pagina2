@@ -1,0 +1,311 @@
+
+.inicio1, .inicio2 
+{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   height: 99vh;
+   padding-bottom: 30px;
+   color: white;   
+}
+.inicio1
+{
+    background: url(../img/f1.jpg);
+}
+.inicio2
+{
+    background: url(../img/f3.jpg);
+}
+.inicio1,.inicio2
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+/* CONFIGURACION INICIO 1***********************************/
+.inicio1 img 
+{
+    width: 160px;
+    height: 160px;
+    border-radius:50%;
+    border: solid rgb(214, 200, 46);
+    box-shadow: 0px 0px 4px 4px rgba(214, 200, 46, 0.4), 
+                0px 0px 4px 4px rgba(214, 200, 46, 0.4);
+}
+.inicio1 .img2
+{
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.cajacen,.cajader,.cajaizq,.cajadow
+{
+    height: calc(100vh /3);
+}
+.cajacen 
+{
+    width: 300px;
+}
+.cajaizq , .cajader
+{
+    width: calc((100% - 300px)/2);
+    padding-top: 25px;
+}
+.cajadow
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding-top: 2% ;   
+}
+.cajacen h1
+{
+    font-weight: bolder;
+    font-size: 30PX;
+}
+.cajacen p a 
+{
+    font-weight: bolder;
+    font-size: 25PX;
+}
+ .cajaizq img 
+{
+    float: right;
+    margin-right: 2%;
+}
+.cajader img
+{
+    float: left;
+    margin-left: 2%;
+}
+/***************************** INICIO 2 *********************************/
+.inicio2 .elex
+{
+    text-align: center;
+    
+}
+.inicio2 i
+{
+    font-size: 65px;
+    margin-bottom:10px ;
+}
+.inicio2 .elex label
+{
+    font-weight: bolder;
+    font-size: 26px;
+    
+}
+.cajaizq2 , .cajader2 , .cajaizq3 , .cajader3 ,.cajadow2
+{
+    width: 50%;
+    height: calc(100vh /5);
+}
+.cajadow2
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cajaizq2 .elex, .cajaizq3 .elex
+{
+    float: right;
+
+}
+.cajader2 .elex, .cajader3 .elex
+{
+    float: left;
+}
+.cajaizq2
+{
+padding-right: 15%;
+}
+.cajader2
+{
+padding-left: 15%; 
+}
+.cajaizq3
+{
+    padding-right:6% ;
+}
+.cajader3
+{
+    padding-left:6%;
+}
+
+/********************** INICIO 3 *************************************/
+
+.inicio3
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/f2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0px;
+    color: white;
+    height: 100vh;
+}
+.inicio3 .fotoacerca
+{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    color: white;
+    min-height: 170px;
+}
+.inicio3 .fotoacerca img
+{
+    width: 100%;
+    min-height: 170px;
+    max-height: 220px;
+    margin: 0px;
+    padding: 0px;
+}
+.inicio3 .textoacerca
+{    
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: 40px;
+    background-color: rgba(0,0,255, 0);
+    text-align: justify;
+    margin: 0px 20px;
+    color: white;
+}
+.inicio3 .ctextoacerca
+{
+    width: 400px;
+}
+.inicio3 ul
+{
+    margin: 10px 0px;
+    padding-left:55px ;
+}
+/* ************************* FOOTER  *****************************************/
+
+
+
+/**********************************************************************************************************************
+*/
+@media screen and (max-width: 760px) 
+{
+    .desvanecedora1
+    {
+        display: none;
+    }   
+    .cajaizq2,.cajaizq3, .cajader2,.cajader3,.cajadow2
+    {
+        display: block;
+        width: 100%;
+        margin: 10px 0px;
+        padding: 0px;
+        height: auto;
+    }
+     .cajaizq2 .elex,
+     .cajaizq3 .elex,
+     .cajader2 .elex,
+     .cajader3 .elex,
+     .cajadow .elex
+    {
+        display: block;
+        float: none;        
+        margin: 0px;
+        padding: 10px 0px;
+    }
+  
+    .inicio2
+    {
+        height: auto;
+    }
+}
+@media screen and (max-width: 600px) 
+{
+ .desvanecedora2
+ {
+     display: none;
+ }
+}
+@media screen and (max-width: 900px) 
+{
+    .inicio3
+    {
+        display: block;
+        height: auto;
+    }
+    .inicio3 .fotoacerca , .inicio3 .textoacerca
+    {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+
+    }
+    
+
+
+    .inicio3 .fotoacerca img,.inicio3 .fotoacerca
+    {
+        
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 110px;
+        max-height: 110px;
+        width: 300px;
+        height: 110px;
+        
+    }
+    .inicio3 
+    {padding-top: 5px;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 470px) 
+{
+ 
+    .inicio3 .textoacerca
+    {
+        
+        min-width: none;
+        max-width: none;
+        width: 95%;
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      
+     }
+    
+    .inicio3 .ctextoacerca
+    {
+       
+       width: 100%;
+       min-width: none;
+       max-width: none;
+       margin: 0px;
+       padding:0px ;
+       padding-left: 10px;
+    }
+    .inicio3 .ctextoacerca ul
+    {
+        padding-left: 15px;
+    }
+}
+

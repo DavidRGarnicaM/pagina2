@@ -1,0 +1,98 @@
+.cd1
+{
+    border: 5px groove blue;
+    background-color:rgba(15, 15, 37,0.8);
+    border-radius: 20px;  
+    width: 15%;
+    min-width:  240px;
+    height: auto;      
+    color: white;
+    position: fixed;
+    right: 10px;
+    bottom: 155px;
+    height: auto;
+    z-index: 2;
+    padding: 10px 5px;
+    transform: scale(0) ;
+    
+}
+.cd1 .titul
+{
+    font-size: 25px;
+    text-align: center;
+}
+.cd1 .titul,
+.cd1 input,
+.cd1 textarea,
+.cd1 button
+{
+    margin: 10px 0px;
+    padding: 10px;
+
+}
+.cd1 input,
+.cd1 textarea
+{
+    background-color: rgba(255,255,255, 0.75);
+    border: solid 3px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+}
+.cd1 textarea 
+{
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+.cd1 button
+{
+    width: 100%;
+    background-color: #002855;
+    border: none ;
+    border-radius: 5px;
+    outline: none;   
+    color: white;
+}
+.cd1 button:hover
+{
+    background-color: rgb(1, 51, 1);
+}
+/*
+*****************************************************************************************
+*/
+#smswpp
+{
+    position: fixed;
+    bottom: 95px;
+    right: 10px;
+    border-radius: 50% ;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    line-height: 50px;
+    z-index: 100;
+    border: #25D366 solid 1px;
+    background-color: #25D366 ;
+    outline: none;
+}
+#smswpp i
+{    
+   color: white;
+   background-color: #25D366;
+   border-radius: 50%;  
+}
+#smswpp:hover , #smswpp:hover i 
+{
+cursor: pointer;
+background-color: #1c753d;
+border-color:  #1c753d;
+}
+.animado
+{
+    transform:scale(0) ;
+    transition: all 0.5s;
+}

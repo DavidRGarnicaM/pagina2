@@ -1,0 +1,216 @@
+
+.navbar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    color: white;justify-content: space-around;
+    background-color:black;       
+    z-index: 20;    
+}
+.clogo
+{
+    background-color: transparent;
+    width: 100px;   
+    min-width: 100px;    
+    min-height: 80px; 
+    height: 80px;
+    margin: 10px 0px;
+}
+.clogo img 
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.navbar-menu
+{
+    display: block;    
+    background-color: transparent;
+    width: 80%;
+    height: 83px;
+    color: white;
+    padding-bottom: 10px;    
+}
+.navbar-menu  ul
+{
+    list-style: none;
+}
+.navbar-menu a:hover , .navbar-menu i:hover
+{   
+     color: black;
+     background-color: rgba(255, 10, 10, 0.7);
+}
+.principallist
+{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;  
+    justify-content: space-around;
+}
+.cOpcion
+{
+    width: auto;
+}
+.titulo
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+}
+.titulo a,.titulo i
+{
+    padding: 10px 5px;
+    font-size:25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.titulo i
+{
+    padding: 10px 0px;
+}
+.titulo .titular , .titulo .btnmo 
+{
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.subtitulos
+{
+    margin-top: 8px;
+    background-color: black; 
+    display: none;
+    text-align: center;
+    margin: 0;
+    padding:0 ;  
+}
+.subtitulos li
+{
+    margin: 0;
+    padding:5px 0px ;
+}
+.subtitulos a 
+{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 5px 15px;
+    font-size: 18px;    
+}
+.menu-toggler
+{
+    display: none;
+    position: relative;
+    float: right;
+    top: 30px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.menu-toggler i
+{
+    display: block;  
+    font-size: 30px;
+}
+.slogan
+{    
+    display: none;
+}
+/********* RESPONSIVA *****************************************************************************/
+
+@media screen and (max-width: 1000px) 
+{
+    .titulo a , .titulo i
+    {
+        font-size: 20px;        
+    }
+}
+@media screen and (max-width: 600px) 
+{
+    .slogan
+    {
+        display: block;
+        width: 165px;
+        margin: auto;
+        position: fixed;
+        left: 100px;
+        right: 50px;
+        top: 25px ;
+        z-index: 31;
+        color: white;
+        
+    }
+    .slogan h1
+    { display: block;
+        width: inherit;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Diplomata SC', cursive;
+        margin: 10px 0px;
+        font-weight: normal;
+        padding: 0;
+    }
+
+    .navbar
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar-menu
+    {
+        display: none;
+        width: 50%;
+    }
+    .menu-toggler
+    {
+        position: absolute;
+        display: block;
+        right: 0px;
+        z-index: 20;
+        cursor: pointer;
+    }
+    .menu-toggler i
+    {
+        color: rgba(255, 255, 255, 0.692)
+    }
+    .principallist
+    {
+        margin-top: 90px;
+        display: block;
+        min-width: 200px;    
+        float: right;
+        border: rgba(94, 94, 184, 0.5)  solid 4px;
+        background-color: black;
+        height: auto;
+    }
+    .cOpcion
+    {
+        width: 100%;
+        border-bottom: rgba(94, 94, 184, 0.5) solid 4px;
+    }
+    .titulo
+    {
+        justify-content: space-between;
+        padding-left:10px ;
+        padding-right: 10px;
+    }
+    .subtitulos
+    {
+        text-align: left;
+        border-radius: 0px;
+        padding: 15px 0px;
+        padding-left:25px ;
+        border-top:rgba(94, 94, 184, 0.5) solid 4px ;
+    }
+}
